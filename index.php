@@ -1,4 +1,22 @@
 
+<?php
+$con=mysqli_connect("localhost","root","","dw_admin");
+// Check connection
+define('USE_PCONNECT', 'false'); 
+define('STORE_SESSIONS', 'mysql');
+if (mysqli_connect_errno()) {
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+ }
+
+session_start ();
+$admin_id=$_SESSION['ID'];
+if(!isset($_SESSION['ID'])){
+	header("location:login.php");
+    exit(); 
+}
+
+ ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>

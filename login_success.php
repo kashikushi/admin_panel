@@ -7,32 +7,33 @@ if (mysqli_connect_errno()) {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
  }
 
-
+session_start ();
 
 if(isset($_POST['submit']))
  {
  extract($_POST);
 
-$username = $_REQUEST['uname'];
+$useremail = $_REQUEST['email'];
 $userpassword = $_REQUEST['password'];
 	 
-	 
-$query="SELECT * FROM `register` WHERE `user_name` = '$username' and `password` ='$userpassword' ";
+
+$query="SELECT * FROM `register` WHERE `email` = '$useremail' and `password` ='$userpassword' ";
     
 	 
 $result=mysqli_query($con,$query);
 while($row=mysqli_fetch_array($result)) 
 	{
 		//$_SESSION['auth']=true;
-		$_SESSION['ID'] =$row['user_id'];
+		$_SESSION['ID'] =$row['admin_id'];
 		$admin_id=$_SESSION['ID'];
-		$name=$row['user_name'];
+	
 	}
 }
-echo($name);
-echo "<a href='logout.php'> Logout  </a>";
+
+header("location:index.php");
  ?>
  
+   
     
 	
 

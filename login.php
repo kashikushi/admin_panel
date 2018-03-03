@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -27,16 +29,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
   <h2 class="form-heading">login</h2>
   <div class="app-cam">
-	  <form>
-		<input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
-		<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-		<div class="submit"><input type="submit" onclick="myFunction()" value="Login"></div>
+  
+	  <form method="post" action="login_success.php">
+		<input type="text" name="email" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
+		<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+		<div class="submit"><input type="submit" name="submit" onclick="myFunction()" value="Login"></div>
 		<ul class="new">
 			<li class="new_left"><p><a href="#">Forgot Password ?</a></p></li>
-			<li class="new_right"><p class="sign">New here ?<a href="register.php"> Sign Up</a></p></li>
+			<li class="new_right"><p class="sign">New here ?<a href="register.php"> Register </a></p></li>
 			<div class="clearfix"></div>
 		</ul>
 	</form>
+	
   </div>
    <div class="copy_layout login">
       <p>Copyright &copy; 2015 Modern. All Rights Reserved | Design by <a href="" target="_blank">W3layouts</a> </p>
