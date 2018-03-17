@@ -1,8 +1,7 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Forms :: w3layouts</title>
+<title>Slider Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -130,34 +129,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	       <h3>Slider Panel</h3>
 	       <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
-							<form class="form-horizontal">
+							<form class="form-horizontal" action="slider_data.php" method="POST">
 							
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Title</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" id="focusedinput" placeholder="Title comes here">
+										<input type="text" name="title" class="form-control1" id="focusedinput" placeholder="Title comes here">
 									</div>
 								</div>
 								
 								<div class="form-group">
 									<label for="txtarea1" class="col-sm-2 control-label">Description</label>
-									<div class="col-sm-8"><textarea name="txtarea1" id="txtarea1" cols="50" rows="4" class="form-control1" placeholder="add description here"></textarea></div>
+									<div class="col-sm-8">
+									<textarea name="desc" id="txtarea1" cols="50" rows="4" class="form-control1" placeholder="add description here"></textarea>
+									</div>
 								</div>
-								
 								 <div class="form-group">
 									<label for="exampleInputFile" class="col-sm-2 control-label">File input</label>
-									<div class="col-sm-8"><input type="file" id="exampleInputFile"></div>
+									<div class="col-sm-8">
+									<input type="file" id="exampleInputFile">
+									</div>
 							  </div>
 							  <div class="panel-footer">
 								<div class="row">
 									<div class="col-sm-8 col-sm-offset-2">
-										<button class="btn-success btn">Submit</button>
+										<button class="btn-success btn" name="submit">Submit</button>
 										<button class="btn-default btn">Cancel</button>
 										<button class="btn-inverse btn">Reset</button>
 									</div>
 								</div>
 							 </div>
-													</form>
+							</form>
 						</div>
 					</div>
   </div>
