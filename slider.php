@@ -147,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 <div class="form-group">
 									<label for="exampleInputFile" class="col-sm-2 control-label">File input</label>
 									<div class="col-sm-8">
-									<input type="file" id="exampleInputFile">
+									<input type="file" name="file1" id="exampleInputFile">
 									</div>
 							  </div>
 							  <div class="panel-footer">

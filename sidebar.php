@@ -49,7 +49,7 @@
                                     <a href="forms.html">Basic Forms</a>
                                 </li>
                                 <li>
-                                    <a href="form.php">Slider</a>
+                                    <a href="slider.php">Slider</a>
                                 </li>
                                 <li>
                                     <a href="validation.html">Validation</a>
