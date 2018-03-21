@@ -141,13 +141,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="txtarea1" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-8">
-									<textarea name="desc" id="txtarea1" cols="50" rows="4" class="form-control1" placeholder="add description here"></textarea>
+									<textarea name="txtarea" id="txtarea" cols="50" rows="4" class="form-control1" placeholder="add description here"></textarea>
 									</div>
 								</div>
 								 <div class="form-group">
 									<label for="exampleInputFile" class="col-sm-2 control-label">File input</label>
 									<div class="col-sm-8">
-									<input type="file" name="file1" id="exampleInputFile">
+									<input type="file" name="file" id="exampleInputFile">
 									</div>
 							  </div>
 							  <div class="panel-footer">
