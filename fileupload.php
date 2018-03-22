@@ -26,7 +26,7 @@ if (isset($_POST['submit']))
 		elseif(move_uploaded_file($_FILES['file']['tmp_name'], 'images2/' .$_FILES['file']['name']))
 		{
 			$attachment = $_FILES['file']['name'];
-			extract($_POST[]);
+			extract($_POST);
 			$input = $_REQUEST['title'];
 			$textarea = $_REQUEST['desc'];
 			$query = "INSERT INTO `aslider1` (`aslider1_title`, `aslider_desc`, `aslider_img` ) VALUES ('$input','$textarea','$attachment')  ";
