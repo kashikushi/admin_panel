@@ -12,7 +12,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 if(isset($_POST['submit']))
 
 {
-	if($_FILES['file']['type'] == 'application/pdf'
+	if(($_FILES['file']['type'] == 'application/pdf')
 	   || ($_FILES['file']['type'] == 'image/jpeg')
 		|| ($_FILES['file']['type'] == 'image/jpg')
 		&& ($_FILES['file']['size'] < 2000000)
@@ -20,16 +20,16 @@ if(isset($_POST['submit']))
 	   {if ($_FILES['file']['error'] > 0)
 	   
 	   {
-		   echo "return code: " .$_FILES['file']['error'];
+		   echo "return code: " . $_FILES['file']['error'];
 	   }
-		elseif (file_exists('images2/'.$_FILES['file']['name']))
+		elseif (file_exists('images2/' . $_FILES['file']['name']))
 		{
 			echo "<script>alert('File already exist');</script>";
 		}
-		elseif(move_uploaded_file($_FILES['file']['tmp_name'], 'images2/' .$_FILES['file']['name']))
+		elseif(move_uploaded_file($_FILES['file']['tmp_name'], 'images2/' . $_FILES['file']['name']))
 		{
 			$attachment = $_FILES['file']['name'];
-			extract($_POST[]);
+			extract($_POST);
 			$input = $_REQUEST['title'];
 			$textarea = $_REQUEST['txtarea'];
 			$query = "INSERT INTO `aslider1` (`aslider1_title`, `aslider1_desc`, `aslider1_img` ) VALUES ('$input','$textarea','$attachment')  ";
@@ -39,12 +39,12 @@ if(isset($_POST['submit']))
 				echo "<script> alert('Successfully inserted');</script>";
 			}
 			else {
-				echo "<script> alert('There was a problem uploading $input and $textarea ');</script>";
+				echo "<script> alert('There was a problem uploading $input ');</script>";
 			}
 		}
 		
 	}
 }
-echo "<br> <a href='slider.php'> Go back </a> ";
-header( "refresh:0;url=slider.php")
+//echo "<br> <a href='slider.php'> Go back </a> ";
+//header( "refresh:0;url=slider.php")
  ?>

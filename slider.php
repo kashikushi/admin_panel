@@ -129,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	       <h3>Slider Panel</h3>
 	       <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
-							<form class="form-horizontal" action="slider_data.php" method="POST">
+							<form class="form-horizontal" action="slider_data.php" method="POST" enctype="multipart/form-data">
 							
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Title</label>
