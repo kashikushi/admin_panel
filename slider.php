@@ -153,9 +153,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <div class="panel-footer">
 								<div class="row">
 									<div class="col-sm-8 col-sm-offset-2">
-										<button class="btn-success btn" name="submit">Submit</button>
-										<button class="btn-default btn">Cancel</button>
-										<button class="btn-inverse btn">Reset</button>
+										<input type="submit" class="btn-success btn" name="submit">
+										
+										
 									</div>
 								</div>
 							 </div>
